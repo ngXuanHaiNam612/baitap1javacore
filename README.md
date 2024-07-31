@@ -24,7 +24,7 @@
 ### II. INTERFACE: 
 1. *HocTap*
 - Gồm các phương thức cho 1 sinh viên: xuất thông tin cá nhân, đang học khoa nào, đi thi...
-1. *QuanLySinhVien*
+2. *QuanLySinhVien*
 - Gồm các phương thức quản lý nhiều sinh viên như xuất thông tin, nhập điểm thi khi đi thi...
 
 # *:) :D :) Khi chạy, ban đầu sinh viên chưa có điểm nên phải cho đi thi trước nhé :) :D :) *
