@@ -11,11 +11,11 @@
  - Extend SinhVien
  - Implement HocTap
  - Có thêm điểm chuyên khoa tự nhiên
-5. *SinhVienXH*
+4. *SinhVienXH*
  - Extend SinhVien
  - Implement HocTap
  - Có thêm điểm chuyên khoa xã hội
-7. *QuanLySinhVien*
+5. *QuanLySinhVien*
  - Implement QuanLySinhVien
 - Gồm danh sách sinh viên và các phương thức để quản lý như:
 - - Xuất thông tin tất cả sinh viên
