@@ -48,14 +48,29 @@ public class SinhVienXH extends SinhVien {
         Scanner sc = new Scanner(System.in);
         super.diThi();
 
-        System.out.println("Điểm Sử: ");
-        this.setSu(sc.nextDouble());
+        do{
+            System.out.println("Điểm Sử: ");
+            this.setSu(sc.nextDouble());
+            if (this.getSu() < 0 || this.getSu() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
-        System.out.println("Điểm Địa: ");
-        this.setDia(sc.nextDouble());
+        do{
+            System.out.println("Điểm Địa: ");
+            this.setDia(sc.nextDouble());
+            if (this.getDia() < 0 || this.getDia() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
-        System.out.println("Điểm GDCD: ");
-        this.setGDCD(sc.nextDouble());
+        do{
+            System.out.println("Điểm GDCD: ");
+            this.setGDCD(sc.nextDouble());
+            if (this.getGDCD() < 0 || this.getGDCD() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
         double diemTrungBinh = (((this.getSu() + this.getDia() + this.getGDCD()) * 2)
                                 + this.getToan()

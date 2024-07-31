@@ -2,7 +2,9 @@ package baitap1.entity;
 
 import baitap1.actions.HocTap;
 
+import java.text.Normalizer;
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 public abstract class SinhVien implements HocTap{
 
@@ -112,12 +114,22 @@ public abstract class SinhVien implements HocTap{
         System.out.println("Sinh viên đã thi xong, vui lòng nhập điểm thi");
 
         Scanner sc = new Scanner(System.in);
+        do{
+            System.out.print("Điểm Toán: ");
+            this.setToan(sc.nextDouble());
+            if (this.getToan() < 0 || this.getToan() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
-        System.out.print("Điểm Toán: ");
-        setToan(sc.nextDouble());
+        do{
+            System.out.println("Điểm Văn: ");
+            this.setVan(sc.nextDouble());
+            if (this.getVan() < 0 || this.getVan() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
-        System.out.println("Điểm Văn: ");
-        setVan(sc.nextDouble());
     }
 
     @Override

@@ -47,14 +47,29 @@ public class SinhVienTN extends SinhVien {
         Scanner sc = new Scanner(System.in);
         super.diThi();
 
-        System.out.println("Điểm Lý: ");
-        this.setLy(sc.nextDouble());
+        do{
+            System.out.println("Điểm Lý: ");
+            this.setLy(sc.nextDouble());
+            if (this.getLy() < 0 || this.getLy() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
-        System.out.println("Điểm Hóa: ");
-        this.setHoa(sc.nextDouble());
+        do{
+            System.out.println("Điểm Hóa: ");
+            this.setHoa(sc.nextDouble());
+            if (this.getVan() < 0 || this.getVan() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
-        System.out.println("Điểm Sinh: ");
-        this.setSinh(sc.nextDouble());
+        do{
+            System.out.println("Điểm Sinh: ");
+            this.setSinh(sc.nextDouble());
+            if (this.getSinh() < 0 || this.getSinh() > 10){
+                System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
+            }else break;
+        }while (true);
 
         double diemTrungBinh = (((this.getToan() + this.getLy()) * 2)
                                 + this.getSinh()
