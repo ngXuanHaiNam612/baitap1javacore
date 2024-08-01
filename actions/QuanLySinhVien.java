@@ -8,6 +8,4 @@ public interface QuanLySinhVien {
     public void xuatDanhSachSinhVienDiemTrungBinhDuoiNamTheoMSSV();
     public void xuatDanhSachSinhVienDiemTrungBinhDuoiNamVaCong1DiemTrungBinh();
 
-
-
 }

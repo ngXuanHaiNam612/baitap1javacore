@@ -58,7 +58,7 @@ public class SinhVienTN extends SinhVien {
         do{
             System.out.println("Điểm Hóa: ");
             this.setHoa(sc.nextDouble());
-            if (this.getVan() < 0 || this.getVan() > 10){
+            if (this.getHoa() < 0 || this.getHoa() > 10){
                 System.out.println("Điểm không hợp lệ, vui lòng nhập lại !!");
             }else break;
         }while (true);
